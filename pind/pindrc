@@ -1,0 +1,7 @@
+# source code on github.com/pixel2175/pind
+CSU :   doas light -A 10
+CSD :   doas light -U 10
+Mr  :   pindc doas
+CSR :   pactl set-sink-volume @DEFAULT_SINK@ +10%
+CSL :   pactl set-sink-volume @DEFAULT_SINK@ -10%
+CSm :   grim -g "$(slurp)" - | wl-copy  --type image/png && notify-send "Screenshot" "The screenshot is copied to clipboard"
